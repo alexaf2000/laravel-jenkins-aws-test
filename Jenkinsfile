@@ -1,9 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Print something') {
       steps {
-        mail(subject: 'Something is happening', body: 'Something has happened in the repositort', from: 'alex2andres@gmail.com', to: 'alex2andres@gmail.com')
+        echo 'All is correct?'
+      }
+    }
+
+    stage('IP CONFIG') {
+      steps {
+        sh 'cmd && ipconfig'
       }
     }
 
