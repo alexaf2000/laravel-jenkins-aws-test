@@ -7,11 +7,5 @@ pipeline {
       }
     }
 
-    stage('IP CONFIG') {
-      steps {
-        sh 'cmd && ipconfig'
-      }
-    }
-
   }
 }
