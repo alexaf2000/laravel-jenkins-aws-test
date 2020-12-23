@@ -13,7 +13,6 @@ pipeline {
 
     stage('Unit tests') {
       steps {
-        input(message: 'Does it works well on that\'', id: 'works', ok: 'Yes, it works', submitter: 'Don\'t know', submitterParameter: 'yes')
         echo 'Unit test pass'
       }
     }
